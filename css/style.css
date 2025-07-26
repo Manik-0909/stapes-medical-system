@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+   --primary-color: #556a8d;
+   ---light-primary-color: #566a8e26;
+   --primary-gradient-bg: linear-gradient(
+      270deg,
+      rgba(86, 106, 142, 0) 0%,
+      rgba(255, 255, 255, 0.16) 100%
+   );
+   --secondary-color: #ed7f1d;
+   --rounded-tl8: 8px;
+   --rounded-br8: 8px;
+   --box-shadow: 0px 0px 8px 0px #566a8e40;
+   --main-heading: 72px;
+   --sub-heading1: 36px;
+   --sub-heading2: 30px;
+   --fs-24: 24px;
+   /* --fs-22: 22px; */
+   --fs-20: 20px;
+   --fs-18: 18px;
+   --fs-16: 16px;
+   --white-color: #fff;
+   --black-color: #000;
+   --max-w: 1360px;
+}
+
+*,
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   min-height: 100vh;
+   font-size: 1rem;
+   font-family: "Nunito", sans-serif;
+   color: var(--black-color);
+}
+
+/* Common CSS */
+.max-w {
+   max-width: var(--max-w);
+   margin-inline: auto;
+}
+
+.main-heading {
+   font-size: var(--main-heading);
+}
+
+.sub-heading1 {
+   font-size: var(--sub-heading1);
+}
+
+.sub-heading2 {
+   font-size: var(--sub-heading2);
+}
+
+.dark-primary-bg {
+   background: var(--dark-primary-color);
+}
+
+.primary-text {
+   color: var(--primary-color);
+}
+
+/* Page Loader CSS */
+#page-loader.fade-out {
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.dot-loader .dot {
+   width: 10px;
+   height: 10px;
+   background-color: var(--secondary-color);
+   border-radius: 50%;
+   animation: loaderBounce 1.4s infinite ease-in-out both;
+}
+
+.dot-loader .dot:nth-child(1) {
+   animation-delay: -0.32s;
+}
+
+.dot-loader .dot:nth-child(2) {
+   animation-delay: -0.16s;
+}
+
+@keyframes loaderBounce {
+   0%,
+   80%,
+   100% {
+      transform: scale(0);
+   }
+   40% {
+      transform: scale(1);
+   }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+   /* .logo {
+      height: 50px;
+   } */
+}
