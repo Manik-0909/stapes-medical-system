@@ -32,78 +32,80 @@
       <!-- Announcement Section End -->
 
       <!-- Header Section Start -->
-      <header class="max-w px-sm-4 px-3">
-         <nav class="navbar navbar-expand-md">
-            <div class="container-fluid px-0">
-               <a class="navbar-brand" href="#">
-                  <img src="./img/logo.svg" alt="logo" />
-               </a>
-               <button
-                  class="navbar-toggler border-0 shadow-none p-0"
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasNavbar"
-                  aria-controls="offcanvasNavbar"
-                  aria-label="Toggle navigation"
-               >
-                  <img
-                     src="./img/icon/ic-toggle-menu.svg"
-                     alt="Toggle Menu Icon"
-                     style="width: 24px"
-                  />
-               </button>
-               <div
-                  class="offcanvas offcanvas-end"
-                  tabindex="-1"
-                  id="offcanvasNavbar"
-                  aria-labelledby="offcanvasNavbarLabel"
-               >
-                  <div class="offcanvas-header pb-0">
-                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                        <img src="./img/logo.svg" alt="logo" />
-                     </h5>
-                     <button
-                        type="button"
-                        class="btn-close border-0 shadow-none"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="Close"
-                     ></button>
-                  </div>
-                  <div class="offcanvas-body">
-                     <ul
-                        class="navbar-nav justify-content-center align-items-lg-center flex-grow-1 gap-xl-4"
-                     >
-                        <li class="nav-item pe-lg-2 text-nowrap">
-                           <a class="nav-link" aria-current="page" href="#">
-                              Home
-                           </a>
-                        </li>
-                        <li class="nav-item pe-lg-2 text-nowrap">
-                           <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item pe-lg-2 text-nowrap">
-                           <a class="nav-link" href="#">Products</a>
-                        </li>
-                        <li class="nav-item pe-lg-2 text-nowrap">
-                           <a class="nav-link" href="#">Where We Serve</a>
-                        </li>
-                        <li class="nav-item pe-lg-2 text-nowrap">
-                           <a class="nav-link" href="#">Gallery</a>
-                        </li>
-                     </ul>
-                     <form class="text-nowrap ms-xl-5 ms-md-2 mt-md-0 mt-4">
+      <div class="position-sticky top-0 bg-white box-shadow">
+         <header class="max-w px-sm-4 px-3">
+            <nav class="navbar navbar-expand-md">
+               <div class="container-fluid px-0">
+                  <a class="navbar-brand" href="#">
+                     <img src="./img/logo.svg" alt="logo" />
+                  </a>
+                  <button
+                     class="navbar-toggler border-0 shadow-none p-0"
+                     type="button"
+                     data-bs-toggle="offcanvas"
+                     data-bs-target="#offcanvasNavbar"
+                     aria-controls="offcanvasNavbar"
+                     aria-label="Toggle navigation"
+                  >
+                     <img
+                        src="./img/icon/ic-toggle-menu.svg"
+                        alt="Toggle Menu Icon"
+                        style="width: 24px"
+                     />
+                  </button>
+                  <div
+                     class="offcanvas offcanvas-end"
+                     tabindex="-1"
+                     id="offcanvasNavbar"
+                     aria-labelledby="offcanvasNavbarLabel"
+                  >
+                     <div class="offcanvas-header pb-0">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                           <img src="./img/logo.svg" alt="logo" />
+                        </h5>
                         <button
                            type="button"
-                           class="btn primary-btn text-white fw-bold py-2 px-lg-4 px-3"
+                           class="btn-close border-0 shadow-none"
+                           data-bs-dismiss="offcanvas"
+                           aria-label="Close"
+                        ></button>
+                     </div>
+                     <div class="offcanvas-body">
+                        <ul
+                           class="navbar-nav justify-content-center align-items-lg-center flex-grow-1 gap-xl-4"
                         >
-                           Contact Us
-                        </button>
-                     </form>
+                           <li class="nav-item pe-lg-2 text-nowrap">
+                              <a class="nav-link" aria-current="page" href="#">
+                                 Home
+                              </a>
+                           </li>
+                           <li class="nav-item pe-lg-2 text-nowrap">
+                              <a class="nav-link" href="#">Features</a>
+                           </li>
+                           <li class="nav-item pe-lg-2 text-nowrap">
+                              <a class="nav-link" href="#">Products</a>
+                           </li>
+                           <li class="nav-item pe-lg-2 text-nowrap">
+                              <a class="nav-link" href="#">Where We Serve</a>
+                           </li>
+                           <li class="nav-item pe-lg-2 text-nowrap">
+                              <a class="nav-link" href="#">Gallery</a>
+                           </li>
+                        </ul>
+                        <form class="text-nowrap ms-xl-5 ms-md-2 mt-md-0 mt-4">
+                           <button
+                              type="button"
+                              class="btn primary-btn text-white fw-bold py-2 px-lg-4 px-3"
+                           >
+                              Contact Us
+                           </button>
+                        </form>
+                     </div>
                   </div>
                </div>
-            </div>
-         </nav>
-      </header>
+            </nav>
+         </header>
+      </div>
       <!-- Header Section End -->
 
       <!-- Hero Section Start -->
@@ -120,11 +122,12 @@
       <!-- Feature Section Start -->
       <section class="bg-white sec-py" id="features">
          <div class="max-w px-sm-4 px-3">
-            <h2
-               class="primary-text fw-bold sub-heading1 d-flex flex-column align-items-center justify-content-center gap-1 mb-5"
+            <div
+               class="mb-5 d-flex flex-column align-items-center justify-content-center"
             >
-               Feature
-            </h2>
+               <h2 class="primary-text fw-bold sub-heading1">Features</h2>
+               <div class="divider"></div>
+            </div>
 
             <div class="row g-sm-5 g-4">
                <div class="col-md-4 col-sm-6 text-sm-start text-center">
@@ -212,94 +215,510 @@
       <!-- Products Section Start -->
       <section class="light-primary-bg sec-py" id="products">
          <div class="max-w px-sm-4 px-3">
-            <h2
-               class="primary-text fw-bold sub-heading1 d-flex flex-column align-items-center justify-content-center gap-1 mb-5"
+            <div
+               class="mb-5 d-flex flex-column align-items-center justify-content-center"
             >
-               Products
-            </h2>
+               <h2 class="primary-text fw-bold sub-heading1">Products</h2>
+               <div class="divider"></div>
+            </div>
 
-            <!-- <div class="row g-sm-5 g-4">
-               <div class="col-md-4 col-sm-6 text-sm-start text-center">
-                  <img
-                     src="./img/icon/ic-feature1.svg"
-                     alt="Feature Icon"
-                     class="img-fluid mb-3"
-                  />
-                  <h5 class="fs-24 mb-1 fw-semibold">Best Price</h5>
-                  <p class="mb-0">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Quasi, minima!
-                  </p>
-               </div>
+            <div class="mb-5 pb-sm-4">
+               <h5 class="sub-heading2 fw-bold mb-4">Elite</h5>
 
-               <div class="col-md-4 col-sm-6 text-sm-start text-center">
-                  <img
-                     src="./img/icon/ic-feature2.svg"
-                     alt="Feature Icon"
-                     class="img-fluid mb-3"
-                  />
-                  <h5 class="fs-24 mb-1 fw-semibold">Order Anytime</h5>
-                  <p class="mb-0">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Quasi, minima!
-                  </p>
-               </div>
+               <div class="row g-md-5 g-4">
+                  <div class="col-lg-4 col-sm-6 text-sm-start text-center">
+                     <div class="bg-white p-4 rounded-3 box-shadow">
+                        <img
+                           src="./img/products/product3.png"
+                           alt="Product Image"
+                           class="w-100 mb-3"
+                        />
 
-               <div class="col-md-4 col-sm-6 text-sm-start text-center">
-                  <img
-                     src="./img/icon/ic-feature3.svg"
-                     alt="Feature Icon"
-                     class="img-fluid mb-3"
-                  />
-                  <h5 class="fs-24 mb-1 fw-semibold">Fast Delivery</h5>
-                  <p class="mb-0">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Quasi, minima!
-                  </p>
-               </div>
+                        <h5 class="fs-24 mb-1 fw-bold">Lorem Ipsum</h5>
+                        <div
+                           class="pb-1 d-flex align-items-center gap-3 justify-content-sm-start justify-content-center"
+                        >
+                           <span class="fs-18 fw-semibold secondary-text"
+                              >₹700.00</span
+                           >
+                           <span
+                              class="text-decoration-line-through text-black-50"
+                           >
+                              ₹900.00
+                           </span>
+                        </div>
 
-               <div class="col-md-4 col-sm-6 text-sm-start text-center">
-                  <img
-                     src="./img/icon/ic-feature1.svg"
-                     alt="Feature Icon"
-                     class="img-fluid mb-3"
-                  />
-                  <h5 class="fs-24 mb-1 fw-semibold">Best Price</h5>
-                  <p class="mb-0">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Quasi, minima!
-                  </p>
-               </div>
+                        <button
+                           type="button"
+                           class="btn primary-btn text-white fw-bold py-2 px-lg-4 px-3 mt-3"
+                        >
+                           Get Quote
+                        </button>
+                     </div>
+                  </div>
 
-               <div class="col-md-4 col-sm-6 text-sm-start text-center">
-                  <img
-                     src="./img/icon/ic-feature2.svg"
-                     alt="Feature Icon"
-                     class="img-fluid mb-3"
-                  />
-                  <h5 class="fs-24 mb-1 fw-semibold">Order Anytime</h5>
-                  <p class="mb-0">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Quasi, minima!
-                  </p>
-               </div>
+                  <div class="col-lg-4 col-sm-6 text-sm-start text-center">
+                     <div class="bg-white p-4 rounded-3 box-shadow">
+                        <img
+                           src="./img/products/product2.png"
+                           alt="Product Image"
+                           class="w-100 mb-3"
+                        />
 
-               <div class="col-md-4 col-sm-6 text-sm-start text-center">
-                  <img
-                     src="./img/icon/ic-feature3.svg"
-                     alt="Feature Icon"
-                     class="img-fluid mb-3"
-                  />
-                  <h5 class="fs-24 mb-1 fw-semibold">Fast Delivery</h5>
-                  <p class="mb-0">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Quasi, minima!
-                  </p>
+                        <h5 class="fs-24 mb-1 fw-bold">Lorem Ipsum</h5>
+                        <div
+                           class="pb-1 d-flex align-items-center gap-3 justify-content-sm-start justify-content-center"
+                        >
+                           <span class="fs-18 fw-semibold secondary-text"
+                              >₹700.00</span
+                           >
+                           <span
+                              class="text-decoration-line-through text-black-50"
+                           >
+                              ₹900.00
+                           </span>
+                        </div>
+
+                        <button
+                           type="button"
+                           class="btn primary-btn text-white fw-bold py-2 px-lg-4 px-3 mt-3"
+                        >
+                           Get Quote
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-6 text-sm-start text-center">
+                     <div class="bg-white p-4 rounded-3 box-shadow">
+                        <img
+                           src="./img/products/product3.png"
+                           alt="Product Image"
+                           class="w-100 mb-3"
+                        />
+
+                        <h5 class="fs-24 mb-1 fw-bold">Lorem Ipsum</h5>
+                        <div
+                           class="pb-1 d-flex align-items-center gap-3 justify-content-sm-start justify-content-center"
+                        >
+                           <span class="fs-18 fw-semibold secondary-text"
+                              >₹700.00</span
+                           >
+                           <span
+                              class="text-decoration-line-through text-black-50"
+                           >
+                              ₹900.00
+                           </span>
+                        </div>
+
+                        <button
+                           type="button"
+                           class="btn primary-btn text-white fw-bold py-2 px-lg-4 px-3 mt-3"
+                        >
+                           Get Quote
+                        </button>
+                     </div>
+                  </div>
                </div>
-            </div> -->
+            </div>
+
+            <div>
+               <h5 class="sub-heading2 fw-bold mb-4">Lorem Ipsum</h5>
+
+               <div class="row g-md-5 g-4">
+                  <div class="col-lg-4 col-sm-6 text-sm-start text-center">
+                     <div class="bg-white p-4 rounded-3 box-shadow">
+                        <img
+                           src="./img/products/product3.png"
+                           alt="Product Image"
+                           class="w-100 mb-3"
+                        />
+
+                        <h5 class="fs-24 mb-1 fw-bold">Lorem Ipsum</h5>
+                        <div
+                           class="pb-1 d-flex align-items-center gap-3 justify-content-sm-start justify-content-center"
+                        >
+                           <span class="fs-18 fw-semibold secondary-text"
+                              >₹700.00</span
+                           >
+                           <span
+                              class="text-decoration-line-through text-black-50"
+                           >
+                              ₹900.00
+                           </span>
+                        </div>
+
+                        <button
+                           type="button"
+                           class="btn primary-btn text-white fw-bold py-2 px-lg-4 px-3 mt-3"
+                        >
+                           Get Quote
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-6 text-sm-start text-center">
+                     <div class="bg-white p-4 rounded-3 box-shadow">
+                        <img
+                           src="./img/products/product2.png"
+                           alt="Product Image"
+                           class="w-100 mb-3"
+                        />
+
+                        <h5 class="fs-24 mb-1 fw-bold">Lorem Ipsum</h5>
+                        <div
+                           class="pb-1 d-flex align-items-center gap-3 justify-content-sm-start justify-content-center"
+                        >
+                           <span class="fs-18 fw-semibold secondary-text"
+                              >₹700.00</span
+                           >
+                           <span
+                              class="text-decoration-line-through text-black-50"
+                           >
+                              ₹900.00
+                           </span>
+                        </div>
+
+                        <button
+                           type="button"
+                           class="btn primary-btn text-white fw-bold py-2 px-lg-4 px-3 mt-3"
+                        >
+                           Get Quote
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-6 text-sm-start text-center">
+                     <div class="bg-white p-4 rounded-3 box-shadow">
+                        <img
+                           src="./img/products/product3.png"
+                           alt="Product Image"
+                           class="w-100 mb-3"
+                        />
+
+                        <h5 class="fs-24 mb-1 fw-bold">Lorem Ipsum</h5>
+                        <div
+                           class="pb-1 d-flex align-items-center gap-3 justify-content-sm-start justify-content-center"
+                        >
+                           <span class="fs-18 fw-semibold secondary-text"
+                              >₹700.00</span
+                           >
+                           <span
+                              class="text-decoration-line-through text-black-50"
+                           >
+                              ₹900.00
+                           </span>
+                        </div>
+
+                        <button
+                           type="button"
+                           class="btn primary-btn text-white fw-bold py-2 px-lg-4 px-3 mt-3"
+                        >
+                           Get Quote
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-6 text-sm-start text-center">
+                     <div class="bg-white p-4 rounded-3 box-shadow">
+                        <img
+                           src="./img/products/product3.png"
+                           alt="Product Image"
+                           class="w-100 mb-3"
+                        />
+
+                        <h5 class="fs-24 mb-1 fw-bold">Lorem Ipsum</h5>
+                        <div
+                           class="pb-1 d-flex align-items-center gap-3 justify-content-sm-start justify-content-center"
+                        >
+                           <span class="fs-18 fw-semibold secondary-text"
+                              >₹700.00</span
+                           >
+                           <span
+                              class="text-decoration-line-through text-black-50"
+                           >
+                              ₹900.00
+                           </span>
+                        </div>
+
+                        <button
+                           type="button"
+                           class="btn primary-btn text-white fw-bold py-2 px-lg-4 px-3 mt-3"
+                        >
+                           Get Quote
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-6 text-sm-start text-center">
+                     <div class="bg-white p-4 rounded-3 box-shadow">
+                        <img
+                           src="./img/products/product2.png"
+                           alt="Product Image"
+                           class="w-100 mb-3"
+                        />
+
+                        <h5 class="fs-24 mb-1 fw-bold">Lorem Ipsum</h5>
+                        <div
+                           class="pb-1 d-flex align-items-center gap-3 justify-content-sm-start justify-content-center"
+                        >
+                           <span class="fs-18 fw-semibold secondary-text"
+                              >₹700.00</span
+                           >
+                           <span
+                              class="text-decoration-line-through text-black-50"
+                           >
+                              ₹900.00
+                           </span>
+                        </div>
+
+                        <button
+                           type="button"
+                           class="btn primary-btn text-white fw-bold py-2 px-lg-4 px-3 mt-3"
+                        >
+                           Get Quote
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-6 text-sm-start text-center">
+                     <div class="bg-white p-4 rounded-3 box-shadow">
+                        <img
+                           src="./img/products/product3.png"
+                           alt="Product Image"
+                           class="w-100 mb-3"
+                        />
+
+                        <h5 class="fs-24 mb-1 fw-bold">Lorem Ipsum</h5>
+                        <div
+                           class="pb-1 d-flex align-items-center gap-3 justify-content-sm-start justify-content-center"
+                        >
+                           <span class="fs-18 fw-semibold secondary-text"
+                              >₹700.00</span
+                           >
+                           <span
+                              class="text-decoration-line-through text-black-50"
+                           >
+                              ₹900.00
+                           </span>
+                        </div>
+
+                        <button
+                           type="button"
+                           class="btn primary-btn text-white fw-bold py-2 px-lg-4 px-3 mt-3"
+                        >
+                           Get Quote
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
       </section>
       <!-- Products Section End -->
+
+      <!-- About Us Section Start -->
+      <section class="bg-white sec-py" id="aboutUs">
+         <div class="max-w px-sm-4 px-3">
+            <div
+               class="mb-5 d-flex flex-column align-items-center justify-content-center"
+            >
+               <h2 class="primary-text fw-bold sub-heading1">About Us</h2>
+               <div class="divider"></div>
+            </div>
+
+            <div class="row g-md-5 g-4">
+               <div class="col-md-6 order-md-1 order-2">
+                  <h3 class="sub-heading2 fw-bold">
+                     Lorem Ipsum is simply dummy text of the printing and
+                     typesetting industry.
+                  </h3>
+                  <p class="mb-0 fs-18">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Dolore ab corporis quam atque incidunt tempora id expedita
+                     officia recusandae numquam, similique corrupti cumque ut
+                     ea, neque temporibus voluptas nesciunt sapiente aliquid
+                     consectetur! Nulla eligendi aspernatur, aliquid
+                     voluptatibus possimus dolor nam voluptatem nihil facilis in
+                     earum quod dicta repellat, consectetur sed!
+                  </p>
+
+                  <ul
+                     class="list-unstyled mt-sm-4 mt-3 achievement-points fs-18"
+                  >
+                     <li class="mb-1">Lorem ipsum dolor sit amet.</li>
+                     <li class="mb-1">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quas, odit?
+                     </li>
+                     <li class="mb-1">Lorem ipsum, dolor</li>
+                  </ul>
+               </div>
+
+               <div class="col-md-6 order-md-2 order-1">
+                  <img
+                     src="./img/about-img.png"
+                     alt="About Us Image"
+                     class="img-fluid w-100 h-100 object-fit-cover"
+                  />
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- About Us Section End -->
+
+      <!-- Where We Serve Section Start -->
+      <section class="primary-gradient-bg sec-py" id="weServe">
+         <div class="max-w px-sm-4 px-3">
+            <div
+               class="mb-5 d-flex flex-column align-items-center justify-content-center"
+            >
+               <h2 class="primary-text fw-bold sub-heading1">Where We Serve</h2>
+               <div class="divider"></div>
+            </div>
+
+            <div class="row g-sm-5 g-4">
+               <div class="col-xl-3 col-md-4 col-sm-6 d-grid">
+                  <div class="bg-white p-4 rounded-3 box-shadow text-center">
+                     <img
+                        src="./img/icon/ic-wws1.svg"
+                        alt="Icon"
+                        class="img-fluid mb-3"
+                     />
+                     <h5 class="fs-24 mb-0 fw-bold primary-text">
+                        Medical College & Hospitals
+                     </h5>
+                  </div>
+               </div>
+
+               <div class="col-xl-3 col-md-4 col-sm-6 d-grid">
+                  <div class="bg-white p-4 rounded-3 box-shadow text-center">
+                     <img
+                        src="./img/icon/ic-wws2.svg"
+                        alt="Icon"
+                        class="img-fluid mb-3"
+                     />
+                     <h5 class="fs-24 mb-0 fw-bold primary-text">
+                        ENT Hospitals
+                     </h5>
+                  </div>
+               </div>
+
+               <div class="col-xl-3 col-md-4 col-sm-6 d-grid">
+                  <div class="bg-white p-4 rounded-3 box-shadow text-center">
+                     <img
+                        src="./img/icon/ic-wws3.svg"
+                        alt="Icon"
+                        class="img-fluid mb-3"
+                     />
+                     <h5 class="fs-24 mb-0 fw-bold primary-text">
+                        Hearing Aid Clinics 
+                     </h5>
+                  </div>
+               </div>
+
+               <div class="col-xl-3 col-md-4 col-sm-6 d-grid">
+                  <div class="bg-white p-4 rounded-3 box-shadow text-center">
+                     <img
+                        src="./img/icon/ic-wws4.svg"
+                        alt="Icon"
+                        class="img-fluid mb-3"
+                     />
+                     <h5 class="fs-24 mb-0 fw-bold primary-text">
+                         Research Institutes
+                     </h5>
+                  </div>
+               </div>
+
+               <div class="col-xl-3 col-md-4 col-sm-6 d-grid">
+                  <div class="bg-white p-4 rounded-3 box-shadow text-center">
+                     <img
+                        src="./img/icon/ic-wws5.svg"
+                        alt="Icon"
+                        class="img-fluid mb-3"
+                     />
+                     <h5 class="fs-24 mb-0 fw-bold primary-text">
+                        Diagnostics & Labs 
+                     </h5>
+                  </div>
+               </div>
+
+               <div class="col-xl-3 col-md-4 col-sm-6 d-grid">
+                  <div class="bg-white p-4 rounded-3 box-shadow text-center">
+                     <img
+                        src="./img/icon/ic-wws6.svg"
+                        alt="Icon"
+                        class="img-fluid mb-3"
+                     />
+                     <h5 class="fs-24 mb-0 fw-bold primary-text">
+                        Hearing Impaired Schools
+                     </h5>
+                  </div>
+               </div>
+
+               <div class="col-xl-3 col-md-4 col-sm-6 d-grid">
+                  <div class="bg-white p-4 rounded-3 box-shadow text-center">
+                     <img
+                        src="./img/icon/ic-wws7.svg"
+                        alt="Icon"
+                        class="img-fluid mb-3"
+                     />
+                     <h5 class="fs-24 mb-0 fw-bold primary-text">
+                        Pediatric Screening
+                     </h5>
+                  </div>
+               </div>
+
+               <div class="col-xl-3 col-md-4 col-sm-6 d-grid">
+                  <div class="bg-white p-4 rounded-3 box-shadow text-center">
+                     <img
+                        src="./img/icon/ic-wws8.svg"
+                        alt="Icon"
+                        class="img-fluid mb-3"
+                     />
+                     <h5 class="fs-24 mb-0 fw-bold primary-text">
+                         Manufacturing Sites
+                     </h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Where We Serve Section End -->
+
+      <!-- Authorised Partners Section Start -->
+      <section class="light-primary-bg sec-py" id="partners">
+         <div class="max-w px-sm-4 px-3">
+            <div
+               class="mb-5 d-flex flex-column align-items-center justify-content-center"
+            >
+               <h2 class="primary-text fw-bold sub-heading1">
+                  Authorised Partners
+               </h2>
+               <div class="divider"></div>
+            </div>
+
+            <div
+               class="row g-5 flex-nowrap justify-content-center overflow-x-auto"
+            >
+               <img
+                  src="./img/icon/ic-partner1.svg"
+                  alt="Partners"
+                  class="img-fluid me-md-5 col-auto"
+               />
+               <img
+                  src="./img/icon/ic-partner2.svg"
+                  alt="Partners"
+                  class="img-fluid mx-lg-5 mx-md-4 col-auto"
+               />
+               <img
+                  src="./img/icon/ic-partner3.svg"
+                  alt="Partners"
+                  class="img-fluid ms-md-5 col-auto"
+               />
+            </div>
+         </div>
+      </section>
+      <!-- Authorised Partners Section End -->
 
       <!-- Page Loader Start -->
       <!-- <div
