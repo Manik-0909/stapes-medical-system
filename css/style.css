@@ -12,6 +12,7 @@
    --rounded-tl8: 8px;
    --rounded-br8: 8px;
    --box-shadow: 0px 0px 8px 0px #566a8e40;
+   --btn-shadow: 1px 1px 4px 0px #566a8e40;
    --main-heading: 72px;
    --sub-heading1: 36px;
    --sub-heading2: 30px;
@@ -20,6 +21,7 @@
    --fs-20: 20px;
    --fs-18: 18px;
    --fs-16: 16px;
+   --fs-14: 14px;
    --white-color: #fff;
    --black-color: #000;
    --max-w: 1360px;
@@ -49,6 +51,16 @@ body {
 
 .sub-heading1 {
    font-size: var(--sub-heading1);
+   position: relative;
+}
+
+.sub-heading1::after {
+   content: "";
+   width: 100px;
+   height: 2px;
+   background-color: var(--secondary-color);
+   border-radius: 20px;
+   display: block;
 }
 
 .sub-heading2 {
@@ -59,8 +71,58 @@ body {
    background: var(--dark-primary-color);
 }
 
+.primary-bg {
+   background: var(--primary-color);
+}
+
 .primary-text {
    color: var(--primary-color);
+}
+
+.light-primary-bg {
+   background-color: var(---light-primary-color);
+}
+
+.sec-py {
+   padding-block: 60px;
+}
+
+.fs-16 {
+   font-size: var(--fs-16);
+}
+
+.fs-20 {
+   font-size: var(--fs-20);
+}
+
+.fs-24 {
+   font-size: var(--fs-24);
+}
+
+.primary-btn {
+   background: var(--primary-color);
+   border-radius: 0;
+   border-top-left-radius: var(--rounded-tl8) !important;
+   border-bottom-right-radius: var(--rounded-br8) !important;
+   border: 1px solid var(--primary-color) !important;
+}
+
+.primary-btn:hover {
+   background: var(--white-color);
+   color: var(--primary-color) !important;
+   box-shadow: var(--btn-shadow);
+   transition: all 0.5s;
+}
+
+header nav .navbar-nav .nav-link {
+   color: var(--primary-color);
+   font-size: var(--fs-18);
+   font-weight: 600;
+}
+
+header nav .navbar-nav .nav-link:hover {
+   color: var(--secondary-color);
+   transition: all 0.5s;
 }
 
 /* Page Loader CSS */
@@ -102,4 +164,28 @@ body {
    /* .logo {
       height: 50px;
    } */
+}
+
+@media only screen and (max-width: 992px) {
+   header nav .navbar-nav .nav-link {
+      font-size: var(--fs-16);
+   }
+
+   .sub-heading1 {
+      font-size: var(--sub-heading2);
+   }
+
+   .fs-24 {
+      font-size: var(--fs-20);
+   }
+
+   #features img {
+      width: 60px;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .fs-16 {
+      font-size: var(--fs-14);
+   }
 }
