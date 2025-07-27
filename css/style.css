@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 :root {
+   --dark-primary-color: #11151c;
    --primary-color: #556a8d;
    ---light-primary-color: #566a8e26;
    --primary-gradient-bg: linear-gradient(
@@ -128,10 +129,14 @@ body {
 }
 
 .primary-btn:hover {
-   background: transparent;
+   background: var(--white-color);
    color: var(--primary-color) !important;
    box-shadow: var(--btn-shadow);
    transition: all 0.5s;
+}
+
+.primary-border {
+   border: 1px solid #566a8e40;
 }
 
 .secondary-text {
@@ -171,6 +176,32 @@ header nav .navbar-nav .nav-link:hover {
 
 #heroCarousel .carousel-indicators button.active {
    background-color: var(--secondary-color);
+}
+
+.form-label {
+   cursor: pointer;
+}
+
+.input-h {
+   background: transparent;
+   border: 0;
+   border-bottom: 1px solid #566a8e80 !important;
+}
+
+.input-h:focus {
+   background: transparent;
+}
+
+footer {
+   background-color: var(--dark-primary-color);
+}
+
+.text-unset {
+   color: unset;
+}
+
+footer .border-secondary-subtle {
+   border-color: rgba(255, 255, 255, 0.25) !important;
 }
 
 /* Page Loader CSS */
@@ -238,6 +269,10 @@ header nav .navbar-nav .nav-link:hover {
    #heroCarousel .carousel-item {
       height: 600px;
    }
+
+   .border-lg-none {
+      border: 0 !important;
+   }
 }
 
 @media only screen and (max-width: 768px) {
@@ -255,6 +290,10 @@ header nav .navbar-nav .nav-link:hover {
 
    .main-heading {
       font-size: 44px;
+   }
+
+   .border-md-none {
+      border: 0 !important;
    }
 }
 

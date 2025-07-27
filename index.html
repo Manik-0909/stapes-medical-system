@@ -110,7 +110,13 @@
 
       <!-- Hero Section Start -->
       <section class="hero-bg">
-         <div id="heroCarousel" data-bs-ride="carousel" class="carousel slide">
+         <div
+            id="heroCarousel"
+            data-bs-ride="carousel"
+            data-bs-interval="5000"
+            data-bs-pause="false"
+            class="carousel slide"
+         >
             <div class="carousel-indicators">
                <button
                   type="button"
@@ -783,38 +789,459 @@
                <div class="divider"></div>
             </div>
 
-            <!-- <div class="max-w-lg overflow-x-auto"> -->
-            <div
-               class="d-flex overflow-auto flex-nowrap gap-5 justify-content-center max-w-lg"
-               style="max-width: 100%"
-            >
-               <img
-                  src="./img/icon/ic-partner1.svg"
-                  alt="Partners"
-                  class="img-fluid me-5"
-                  style="max-width: 250px"
-               />
-               <img
-                  src="./img/icon/ic-partner2.svg"
-                  alt="Partners"
-                  class="img-fluid mx-5"
-                  style="max-width: 150px"
-               />
-               <img
-                  src="./img/icon/ic-partner3.svg"
-                  alt="Partners"
-                  class="img-fluid ms-5"
-                  style="max-width: 250px"
-               />
+            <div class="overflow-auto" style="max-width: 100%">
+               <div
+                  class="d-flex flex-nowrap gap-5 justify-content-center"
+                  style="min-width: max-content; padding: 0 1rem"
+               >
+                  <img
+                     src="./img/icon/ic-partner1.svg"
+                     alt="Partner 1"
+                     class="img-fluid me-5"
+                     style="max-width: 250px"
+                  />
+                  <img
+                     src="./img/icon/ic-partner2.svg"
+                     alt="Partner 2"
+                     class="img-fluid mx-sm-5"
+                     style="max-width: 150px"
+                  />
+                  <img
+                     src="./img/icon/ic-partner3.svg"
+                     alt="Partner 3"
+                     class="img-fluid ms-5"
+                     style="max-width: 250px"
+                  />
+               </div>
             </div>
-
-            <!-- </div> -->
          </div>
       </section>
       <!-- Authorised Partners Section End -->
 
+      <!-- Gallery Section Start -->
+      <section class="bg-white sec-py" id="gallery">
+         <div class="max-w px-sm-4 px-3">
+            <div
+               class="mb-5 d-flex flex-column align-items-center justify-content-center"
+            >
+               <h2 class="primary-text fw-bold sub-heading1">Gallery</h2>
+               <div class="divider"></div>
+            </div>
+
+            <div>
+               <swiper-container
+                  class="mySwiper"
+                  loop="true"
+                  init="true"
+                  autoplay='{"delay": 3000, "disableOnInteraction": false}'
+                  grab-cursor="true"
+                  breakpoints='{
+      "576": { "slidesPerView": 2, "spaceBetween": 24 },
+      "768": { "slidesPerView": 3, "spaceBetween": 24 },
+      "992": { "slidesPerView": 4, "spaceBetween": 24 }
+   }'
+               >
+                  <swiper-slide>
+                     <img
+                        src="./img/gallery/1.png"
+                        alt="Gallery Img"
+                        class="img-fluid w-100"
+                     />
+                  </swiper-slide>
+                  <swiper-slide>
+                     <img
+                        src="./img/gallery/2.png"
+                        alt="Gallery Img"
+                        class="img-fluid w-100"
+                     />
+                  </swiper-slide>
+                  <swiper-slide>
+                     <img
+                        src="./img/gallery/3.png"
+                        alt="Gallery Img"
+                        class="img-fluid w-100"
+                     />
+                  </swiper-slide>
+                  <swiper-slide>
+                     <img
+                        src="./img/gallery/4.png"
+                        alt="Gallery Img"
+                        class="img-fluid w-100"
+                     />
+                  </swiper-slide>
+
+                  <swiper-slide>
+                     <img
+                        src="./img/gallery/1.png"
+                        alt="Gallery Img"
+                        class="img-fluid w-100"
+                     />
+                  </swiper-slide>
+                  <swiper-slide>
+                     <img
+                        src="./img/gallery/2.png"
+                        alt="Gallery Img"
+                        class="img-fluid w-100"
+                     />
+                  </swiper-slide>
+                  <swiper-slide>
+                     <img
+                        src="./img/gallery/3.png"
+                        alt="Gallery Img"
+                        class="img-fluid w-100"
+                     />
+                  </swiper-slide>
+                  <swiper-slide>
+                     <img
+                        src="./img/gallery/4.png"
+                        alt="Gallery Img"
+                        class="img-fluid w-100"
+                     />
+                  </swiper-slide>
+               </swiper-container>
+
+               <div
+                  class="d-flex align-items-center gap-3 justify-content-center mt-4 pt-3"
+               >
+                  <button
+                     type="button"
+                     class="p-0 border-0 bg-transparent"
+                     id="prevBtn"
+                  >
+                     <img src="./img/icon/ic-prev.png" alt="Prev Icon" />
+                  </button>
+
+                  <button
+                     type="button"
+                     class="p-0 border-0 bg-transparent"
+                     id="nextBtn"
+                  >
+                     <img src="./img/icon/ic-next.png" alt="Next Icon" />
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Gallery Section End -->
+
+      <!-- Contact Us Section Start -->
+      <section class="light-primary-bg sec-py" id="contactUs">
+         <div class="max-w px-sm-4 px-3">
+            <div
+               class="mb-5 d-flex flex-column align-items-center justify-content-center"
+            >
+               <h2 class="primary-text fw-bold sub-heading1">Contact Us</h2>
+               <div class="divider"></div>
+            </div>
+
+            <div class="row g-lg-5 g-4">
+               <div class="col-lg-5 col-md-6 d-grid order-md-1 order-2">
+                  <div class="bg-white rounded-3 primary-border p-4">
+                     <h5 class="primary-text fw-bold mb-4 fs-24">
+                        Get in touch
+                     </h5>
+
+                     <div>
+                        <div class="d-flex gap-2 mb-3">
+                           <img
+                              src="./img/icon/ic-phone.svg"
+                              alt="Phone Icon"
+                           />
+                           <div>
+                              <h6 class="fw-normal text-black-50 mb-1">
+                                 Phone Number
+                              </h6>
+                              <a
+                                 href="tel:+91 8044015893"
+                                 class="primary-text fw-bold text-decoration-none"
+                                 >+91 8044015893</a
+                              >
+                           </div>
+                        </div>
+
+                        <div class="d-flex gap-2 mb-3">
+                           <img src="./img/icon/ic-mail.svg" alt="Mail Icon" />
+                           <div>
+                              <h6 class="fw-normal text-black-50 mb-1">
+                                 Email
+                              </h6>
+                              <a
+                                 href="mailto: info@stapes.com"
+                                 class="primary-text fw-bold text-decoration-none"
+                                 >info@stapes.com</a
+                              >
+                           </div>
+                        </div>
+
+                        <div class="d-flex gap-2 mb-3 align-items-start">
+                           <img
+                              src="./img/icon/ic-location.svg"
+                              alt="location Icon"
+                           />
+                           <div>
+                              <h6 class="fw-normal text-black-50 mb-1">
+                                 Address
+                              </h6>
+                              <p class="primary-text fw-bold mb-0">
+                                 6th Floor, Soho No-26 Hermitage Plaza, K-area
+                                 Road, Dhakoli Zirakpur Mohali, Punjab
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-7 col-md-6 d-grid order-md-2 order-1">
+                  <div class="p-4 pt-sm-4 pt-0">
+                     <h5 class="primary-text fw-bold mb-4 fs-24">
+                        Fill out the contact form
+                     </h5>
+
+                     <form class="row g-4">
+                        <div class="col-sm-6">
+                           <label
+                              for="name"
+                              class="form-label primary-text fw-bold"
+                              >Name *</label
+                           >
+                           <input
+                              type="text"
+                              class="form-control input-h px-0 rounded-0 pb-2 shadow-none"
+                              id="name"
+                              placeholder="Enter your name"
+                              required
+                           />
+                        </div>
+
+                        <div class="col-sm-6">
+                           <label
+                              for="email"
+                              class="form-label primary-text fw-bold"
+                              >Email *</label
+                           >
+                           <input
+                              type="email"
+                              class="form-control input-h px-0 rounded-0 pb-2 shadow-none"
+                              id="email"
+                              placeholder="Enter your email"
+                              required
+                           />
+                        </div>
+
+                        <div class="col-12">
+                           <label
+                              for="msg"
+                              class="form-label primary-text fw-bold"
+                              >Message
+                           </label>
+                           <!-- <input
+                              type="email"
+                              class="form-control input-h px-0 rounded-0 pb-2 shadow-none"
+                              id="email"
+                              placeholder="Type your message here"
+                           /> -->
+                           <textarea
+                              name="message"
+                              id="msg"
+                              class="form-control input-h px-0 rounded-0 pb-2 shadow-none"
+                              style="resize: none"
+                              placeholder="Type your message here"
+                           ></textarea>
+                        </div>
+
+                        <div class="col-12">
+                           <button
+                              type="button"
+                              class="btn primary-btn text-white fw-bold py-2 ms-auto d-block px-4 mt-md-5 mt-4"
+                           >
+                              Submit
+                           </button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Contact Us Section End -->
+
+      <!-- Footer Section Start -->
+      <footer class="sec-py pb-3 text-white">
+         <div class="max-w px-sm-4 px-3">
+            <div class="row g-sm-5 g-4">
+               <div
+                  class="col-lg-3 col-12 border-end border-secondary-subtle text-lg-start text-center border-lg-none"
+               >
+                  <img
+                     src="./img/footer-logo.svg"
+                     alt="Logo"
+                     class="img-fluid mb-2"
+                  />
+                  <h6 class="fw-normal">
+                     Lorem Ipsum is simply dummy text of the printing and
+                     typesetting industry.
+                  </h6>
+
+                  <div class="mt-4 pt-lg-2">
+                     <h5 class="fs-20 fw-bold">Follow Us</h5>
+
+                     <div
+                        class="d-flex gap-2 align-items-center justify-content-lg-start justify-content-center"
+                     >
+                        <a href="#" class="text-decoration-none">
+                           <img src="./img/icon/ic-fb.svg" alt="Social Icon" />
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                           <img
+                              src="./img/icon/ic-insta.svg"
+                              alt="Social Icon"
+                           />
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                           <img
+                              src="./img/icon/ic-twitter.svg"
+                              alt="Social Icon"
+                           />
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+               <div
+                  class="col-lg-3 col-md-4 col-6 border-end border-md-none border-secondary-subtle"
+               >
+                  <div class="ps-lg-3">
+                     <h5 class="fs-20 fw-bold mb-3">Quick Links</h5>
+                     <ul class="list-unstyled">
+                        <li class="mb-1">
+                           <a
+                              href="#"
+                              class="text-decoration-none text-unset small"
+                              >Lorem</a
+                           >
+                        </li>
+                        <li class="mb-1">
+                           <a
+                              href="#"
+                              class="text-decoration-none text-unset small"
+                              >Lorem</a
+                           >
+                        </li>
+                        <li class="mb-1">
+                           <a
+                              href="#"
+                              class="text-decoration-none text-unset small"
+                              >Lorem Ipsum</a
+                           >
+                        </li>
+                        <li class="mb-1">
+                           <a
+                              href="#"
+                              class="text-decoration-none text-unset small"
+                              >Lorem</a
+                           >
+                        </li>
+                        <li class="mb-1">
+                           <a
+                              href="#"
+                              class="text-decoration-none text-unset small"
+                              >Lorem</a
+                           >
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div
+                  class="col-lg-3 col-md-4 col-6 border-end border-secondary-subtle border-md-none"
+               >
+                  <div class="ps-lg-3">
+                     <h5 class="fs-20 fw-bold mb-3">Related Info</h5>
+                     <ul class="list-unstyled">
+                        <li class="mb-1">
+                           <a
+                              href="#"
+                              class="text-decoration-none text-unset small"
+                              >Lorem</a
+                           >
+                        </li>
+                        <li class="mb-1">
+                           <a
+                              href="#"
+                              class="text-decoration-none text-unset small"
+                              >Lorem</a
+                           >
+                        </li>
+                        <li class="mb-1">
+                           <a
+                              href="#"
+                              class="text-decoration-none text-unset small"
+                              >Lorem Ipsum</a
+                           >
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="ps-lg-3">
+                     <h5 class="fs-20 fw-bold mb-3">Contact</h5>
+                     <ul class="list-unstyled">
+                        <li class="mb-2 d-flex align-items-center gap-2">
+                           <img
+                              src="./img/icon/ic-phone-sm.svg"
+                              alt="Phone Icon"
+                           />
+                           <a
+                              href="tel:+91 8044015893"
+                              class="text-decoration-none text-unset small"
+                              >+91 8044015893</a
+                           >
+                        </li>
+                        <li class="mb-2 d-flex align-items-center gap-2">
+                           <img
+                              src="./img/icon/ic-mail-sm.svg"
+                              alt="Mail Icon"
+                           />
+                           <a
+                              href="mailto:info@stapes.com"
+                              class="text-decoration-none text-unset small"
+                              >info@stapes.com</a
+                           >
+                        </li>
+
+                        <li class="mb-1 d-flex align-items-start gap-2">
+                           <img
+                              src="./img/icon/ic-location-sm.svg"
+                              alt="Location Icon"
+                           />
+                           <p class="text-white mb-0 small">
+                              6th Floor, Soho No-26 Hermitage Plaza, K-area
+                              Road, Dhakoli Zirakpur Mohali, Sas Nagar-140603,
+                              Punjab, India
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+            <hr class="mt-5" />
+
+            <p class="mb-0 small text-center">
+               © 2025
+               <span class="secondary-text fw-semibold"
+                  >Stapes Medical Systems.</span
+               >
+               All rights reserved.
+            </p>
+         </div>
+      </footer>
+      <!-- Footer Section End -->
+
       <!-- Page Loader Start -->
-      <!-- <div
+      <div
          id="page-loader"
          class="position-fixed top-0 start-0 w-100 min-vh-100 bg-white d-flex justify-content-center align-items-center"
          style="z-index: 9999"
@@ -824,11 +1251,15 @@
             <div class="dot"></div>
             <div class="dot"></div>
          </div>
-      </div> -->
+      </div>
       <!-- Page Loader End -->
 
       <!-- JavaScript Scripts -->
+      <script src="./js/main.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"></script>
+
+      <!-- Swiper JS Script -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
    </body>
 </html>
