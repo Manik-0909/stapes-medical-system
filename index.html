@@ -32,7 +32,7 @@
       <!-- Announcement Section End -->
 
       <!-- Header Section Start -->
-      <div class="position-sticky top-0 bg-white box-shadow">
+      <div class="position-sticky top-0 bg-white box-shadow z-3">
          <header class="max-w px-sm-4 px-3">
             <nav class="navbar navbar-expand-md">
                <div class="container-fluid px-0">
@@ -110,12 +110,98 @@
 
       <!-- Hero Section Start -->
       <section class="hero-bg">
-         <h1 class="main-heading">Lorem Ipsum is simply dummy</h1>
-         <p class="fs-20">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer.
-         </p>
+         <div id="heroCarousel" data-bs-ride="carousel" class="carousel slide">
+            <div class="carousel-indicators">
+               <button
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+               ></button>
+               <button
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+               ></button>
+               <button
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+               ></button>
+            </div>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div
+                     class="text-white col-lg-9 col-11 mx-auto text-center d-flex flex-column align-items-center justify-content-center h-100"
+                  >
+                     <h1 class="main-heading mb-0">
+                        Lorem Ipsum is simply dummy
+                     </h1>
+                     <p class="fs-20 mb-0 col-xl-8 col-md-10 mx-auto">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer.
+                     </p>
+
+                     <button
+                        type="button"
+                        class="btn primary-btn text-white fw-bold py-2 fs-18 px-4 mt-5"
+                     >
+                        Get A Quote
+                     </button>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div
+                     class="text-white col-lg-9 col-11 mx-auto text-center d-flex flex-column align-items-center justify-content-center h-100"
+                  >
+                     <h1 class="main-heading mb-0">
+                        Lorem Ipsum is simply dummy
+                     </h1>
+                     <p class="fs-20 mb-0 col-xl-8 col-md-10 mx-auto">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer.
+                     </p>
+
+                     <button
+                        type="button"
+                        class="btn primary-btn text-white fw-bold py-2 fs-18 px-4 mt-5"
+                     >
+                        Get A Quote
+                     </button>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div
+                     class="text-white col-lg-9 col-11 mx-auto text-center d-flex flex-column align-items-center justify-content-center h-100"
+                  >
+                     <h1 class="main-heading mb-0">
+                        Lorem Ipsum is simply dummy
+                     </h1>
+                     <p class="fs-20 mb-0 col-xl-8 col-md-10 mx-auto">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer.
+                     </p>
+
+                     <button
+                        type="button"
+                        class="btn primary-btn text-white fw-bold py-2 fs-18 px-4 mt-5"
+                     >
+                        Get A Quote
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
       </section>
       <!-- Hero Section End -->
 
@@ -697,25 +783,32 @@
                <div class="divider"></div>
             </div>
 
+            <!-- <div class="max-w-lg overflow-x-auto"> -->
             <div
-               class="row g-5 flex-nowrap justify-content-center overflow-x-auto"
+               class="d-flex overflow-auto flex-nowrap gap-5 justify-content-center max-w-lg"
+               style="max-width: 100%"
             >
                <img
                   src="./img/icon/ic-partner1.svg"
                   alt="Partners"
-                  class="img-fluid me-md-5 col-auto"
+                  class="img-fluid me-5"
+                  style="max-width: 250px"
                />
                <img
                   src="./img/icon/ic-partner2.svg"
                   alt="Partners"
-                  class="img-fluid mx-lg-5 mx-md-4 col-auto"
+                  class="img-fluid mx-5"
+                  style="max-width: 150px"
                />
                <img
                   src="./img/icon/ic-partner3.svg"
                   alt="Partners"
-                  class="img-fluid ms-md-5 col-auto"
+                  class="img-fluid ms-5"
+                  style="max-width: 250px"
                />
             </div>
+
+            <!-- </div> -->
          </div>
       </section>
       <!-- Authorised Partners Section End -->

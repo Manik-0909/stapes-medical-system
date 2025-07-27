@@ -94,6 +94,11 @@ body {
    background-size: cover;
 }
 
+.max-w-lg {
+   max-width: 992px;
+   margin-inline: auto;
+}
+
 .sec-py {
    padding-block: 60px;
 }
@@ -123,7 +128,7 @@ body {
 }
 
 .primary-btn:hover {
-   background: var(--white-color);
+   background: transparent;
    color: var(--primary-color) !important;
    box-shadow: var(--btn-shadow);
    transition: all 0.5s;
@@ -148,6 +153,24 @@ header nav .navbar-nav .nav-link:hover {
    background: url(../img/icon/ic-tick.svg) no-repeat left center;
    background-size: 16px;
    padding-left: 24px;
+}
+
+#heroCarousel .carousel-item {
+   background: url(../img/hero-bg.png) no-repeat left center;
+   background-size: cover;
+   height: 700px;
+}
+
+#heroCarousel .carousel-indicators {
+   gap: 8px;
+}
+
+#heroCarousel .carousel-indicators button {
+   width: 40px;
+}
+
+#heroCarousel .carousel-indicators button.active {
+   background-color: var(--secondary-color);
 }
 
 /* Page Loader CSS */
@@ -186,9 +209,9 @@ header nav .navbar-nav .nav-link:hover {
 
 /* Media Queries */
 @media only screen and (max-width: 1200px) {
-   /* .logo {
-      height: 50px;
-   } */
+   .main-heading {
+      font-size: 56px;
+   }
 }
 
 @media only screen and (max-width: 992px) {
@@ -211,6 +234,10 @@ header nav .navbar-nav .nav-link:hover {
    #features img {
       width: 60px;
    }
+
+   #heroCarousel .carousel-item {
+      height: 600px;
+   }
 }
 
 @media only screen and (max-width: 768px) {
@@ -218,7 +245,21 @@ header nav .navbar-nav .nav-link:hover {
       font-size: var(--fs-14);
    }
 
+   .fs-20 {
+      font-size: var(--fs-18);
+   }
+
    .sec-py {
       padding-block: 40px;
+   }
+
+   .main-heading {
+      font-size: 44px;
+   }
+}
+
+@media only screen and (max-width: 576px) {
+   #heroCarousel .carousel-item {
+      height: 550px;
    }
 }
